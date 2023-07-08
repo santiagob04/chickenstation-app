@@ -18,7 +18,6 @@ function ItemListContainer() {
   
   //Agregar un producto al carrito
 const handleAddToCart = (product) => {
-  // console.log('usted quiere agregar al carrito:',product)
   addToCart(product);
 };
 

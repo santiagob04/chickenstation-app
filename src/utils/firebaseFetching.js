@@ -10,7 +10,6 @@ import {
 import { db } from "../firebase/firebaseConfig";
 
 const productsCollection = collection (db, 'products');
-// let categoryCollection = collection=(db, "category");
 
 export const getAllProducts = async () => {
     try {
