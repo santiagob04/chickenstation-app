@@ -1,0 +1,48 @@
+.Navigation {
+    display: flex;
+    background: #000;
+    min-height: 5rem;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+ ul li {
+    display: inline-block;
+  }
+
+.Link {
+    color: wihte;
+    list-style: none;
+    font-size: 20px;
+}
+
+ul li:hover>.submenu {
+    display: block;
+}
+
+ul .submenu {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+ul .submenu li {
+    display: block;
+}
+
+ul .submenu li a {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+ul .submenu li a:hover {
+    background-color: #ddd;
+}

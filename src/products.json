@@ -1,0 +1,165 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Milanesa de pollo",
+        "price": 8.99,
+        "description": "Deliciosa milanesa de pollo empanizada y jugosa.",
+        "category": "Pollo",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564384/chicken-station/Milanesa_de_pollo_iyd5w3.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Nuggets de pollo",
+        "price": 5.49,
+        "description": "Sabrosos nuggets de pollo crujientes por fuera y tiernos por dentro.",
+        "category": "Pollo",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564383/chicken-station/Nuggets_de_pollo_mqjvwq.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Hamburguesa clásica",
+        "price": 6.99,
+        "description": "Una hamburguesa jugosa con carne de pollo, lechuga, tomate y aderezo especial.",
+        "category": "Hamburguesas",
+        "pictureUrl": "https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564383/chicken-station/Hamburguesa_de_pollo_by2ovx.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Milanesa de ternera",
+        "price": 9.99,
+        "description": "Exquisita milanesa de ternera empanizada y de gran tamaño.",
+        "category": "Milanesas",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564384/chicken-station/Milanesa_de_ternera_sj2hul.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Nuggets de pollo picantes",
+        "price": 6.49,
+        "description": "Nuggets de pollo con un toque de especias que le dan un sabor picante único.",
+        "category": "Pollo",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564383/chicken-station/Hamburguesa_de_pollo_picante_odolyx.webp"
+      },
+      {
+        "id": 6,
+        "name": "Hamburguesa de pollo BBQ",
+        "price": 7.99,
+        "description": "Hamburguesa de pollo con salsa barbacoa, cebolla caramelizada y queso derretido.",
+        "category": "Hamburguesas",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564384/chicken-station/Hamburguesa_de_pollo_bbq_pyldo3.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Milanesa napolitana",
+        "price": 10.49,
+        "description": "Milanesa de pollo con salsa de tomate, jamón, queso y orégano.",
+        "category": "Milanesas",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564383/chicken-station/Milanesa_napolitana_rdn1k3.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Hamburguesa de pollo picante",
+        "price": 8.49,
+        "description": "Hamburguesa de pollo con salsa picante, jalapeños y queso picante.",
+        "category": "Hamburguesas",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564383/chicken-station/Hamburguesa_de_pollo_picante_odolyx.webp"
+      },
+      {
+        "id": 9,
+        "name": "Milanesa de pollo a la provenzal",
+        "price": 9.99,
+        "description": "Milanesa de pollo con ajo, perejil y limón.",
+        "category": "Milanesas",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564384/chicken-station/Milanesa_de_pollo_a_la_provenzal_n9wxni.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Nuggets de pollo con queso",
+        "price": 6.99,
+        "description": "Nuggets de pollo rellenos de queso derretido.",
+        "category": "Pollo",
+        "pictureUrl":"https://res.cloudinary.com/dhfzmxq3s/image/upload/v1687564383/chicken-station/Nuggets_de_pollo_con_queso_rtx29n.webp"
+      },
+      {
+        "id": 11,
+        "name": "Hamburguesa de pollo con aguacate",
+        "price": 7.99,
+        "description": "Hamburguesa de pollo con aguacate fresco, lechuga y tomate.",
+        "category": "Hamburguesas",
+        "pictureUrl":""
+      },
+      {
+        "id": 12,
+        "name": "Milanesa de pollo con ensalada",
+        "price": 9.49,
+        "description": "Milanesa de pollo acompañada de una fresca ensalada mixta.",
+        "category": "Milanesas",
+        "pictureUrl":""
+      },
+      {
+        "id": 13,
+        "name": "Nuggets de pollo con salsa de miel y mostaza",
+        "price": 6.99,
+        "description": "Nuggets de pollo bañados en una deliciosa salsa agridulce de miel y mostaza.",
+        "category": "Pollo",
+        "pictureUrl":""
+      },
+      {
+        "id": 14,
+        "name": "Hamburguesa de pollo con champiñones",
+        "price": 8.49,
+        "description": "Hamburguesa de pollo con champiñones salteados y queso suave.",
+        "category": "Hamburguesas",
+        "pictureUrl":""
+      },
+      {
+        "id": 15,
+        "name": "Milanesa de pollo con papas fritas",
+        "price": 10.99,
+        "description": "Milanesa de pollo acompañada de papas fritas doradas y crujientes.",
+        "category": "Milanesas",
+        "pictureUrl":""
+      },
+      {
+        "id": 16,
+        "name": "Nuggets de pollo a la BBQ",
+        "price": 6.99,
+        "description": "Nuggets de pollo con salsa barbacoa para un sabor ahumado irresistible.",
+        "category": "Pollo",
+        "pictureUrl":""
+      },
+      {
+        "id": 17,
+        "name": "Hamburguesa de pollo con huevo",
+        "price": 7.99,
+        "description": "Hamburguesa de pollo con huevo frito, tocino y queso cheddar derretido.",
+        "category": "Hamburguesas",
+        "pictureUrl":""
+      },
+      {
+        "id": 18,
+        "name": "Milanesa de pollo a la provenzal",
+        "price": 9.49,
+        "description": "Milanesa de pollo con ajo, perejil y limón.",
+        "category": "Milanesas",
+        "pictureUrl":""
+      },
+      {
+        "id": 19,
+        "name": "Nuggets de pollo con salsa de queso",
+        "price": 6.99,
+        "description": "Nuggets de pollo servidos con una salsa cremosa de queso cheddar.",
+        "category": "Pollo",
+        "pictureUrl":""
+      },
+      {
+        "id": 20,
+        "name": "Hamburguesa de pollo clásica",
+        "price": 6.99,
+        "description": "La clásica hamburguesa de pollo con lechuga, tomate, cebolla y salsa especial.",
+        "category": "Hamburguesas",
+        "pictureUrl":""
+      }
+    ]
+  }
+  
