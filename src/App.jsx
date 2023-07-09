@@ -14,6 +14,7 @@ import ItemListContainer from "./components/Products/ItemListContainer"
 import ItemDetailContainer from "./components/ProductDetail/ItemDetailContainer"
 import { CartProvider } from "./context/CartContext"
 import CartWidget from "./components/CartWidget/CartWidget"
+import Checkout from "./pages/Checkout"
 
 
 const App = () => {
@@ -33,7 +34,7 @@ const App = () => {
             <Route path="/item/:id" element={<ItemDetailContainer />} />
 
             <Route path="/CartWidget" element={<CartWidget />} />
-
+            <Route path="/Checkout" element={<Checkout />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>     
           </CartProvider>

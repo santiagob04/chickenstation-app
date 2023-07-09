@@ -10,6 +10,7 @@ import {
 import { db } from "../firebase/firebaseConfig";
 
 const productsCollection = collection (db, 'products');
+const ordersCollection = collection(db, "order");
 
 export const getAllProducts = async () => {
     try {
@@ -34,6 +35,12 @@ export const getProductById = async (id) => {
     }
   };
 
+  export const addNewOrder = async (order) => {
+    const request = addDoc(ordersCollection, order);
+    const response = await request;
+    const orderID = response.id;
+    return orderID;
+  };
 
 
 

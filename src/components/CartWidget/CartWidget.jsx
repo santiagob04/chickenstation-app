@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { Grid } from '@mui/material';
 import Item from '../Item/Item';
+import Checkout from "../../pages/Checkout"
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
   const { cartItems,getNumberOfItems } = useContext(CartContext);
@@ -25,7 +27,7 @@ const CartWidget = () => {
         </Grid>
         ))}
       </ul>
-      <button>Finalizar compra</button>
+      <Link to={`/Checkout`}>Finalizar Comrpra</Link>
     </div>
   );
 }

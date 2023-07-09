@@ -1,8 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Formik, Field, Form } from 'formik';
+import { addNewOrder } from '../../utils/firebaseFetching';
+import { CartContext } from '../../context/CartContext';
 
-const CheckoutForm = () => (
+
+
+
+
+
+
+const CheckoutForm = ({ setId }) => {
+const { items } = CartContext();
+
+const handleSubmit = async (values, resetForm) => {
+
+  const orderId = await addNewOrder(order);
+  setId(orderId);
+  resetForm({ values: ""});
+}
+
   <div>
     <h1>Para finalizar tu compra!</h1>
     <Formik
@@ -13,7 +29,7 @@ const CheckoutForm = () => (
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
-        alert(JSON.stringify(values, null, 2));
+        // alert(JSON.stringify(values, null, 2));
       }}
     >
       <Form>
@@ -34,6 +50,8 @@ const CheckoutForm = () => (
       </Form>
     </Formik>
   </div>
-);
+;
+}
 
-ReactDOM.render(<Basic />, document.getElementById('root'));
+
+export default CheckoutForm;
