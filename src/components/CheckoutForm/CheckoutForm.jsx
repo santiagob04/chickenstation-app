@@ -1,56 +1,51 @@
 import React from 'react';
-import { Formik, Field, Form } from 'formik';
+import { Formik, Field, Form, useFormik } from 'formik';
 import { addNewOrder } from '../../utils/firebaseFetching';
 import { CartContext } from '../../context/CartContext';
-
-
-
-
-
-
+import { useContext } from 'react';
+import { Button, TextField } from '@mui/material';
 
 const CheckoutForm = ({ setId }) => {
-const { items } = CartContext();
+  const { products } = useContext(CartContext);
 
-const handleSubmit = async (values, resetForm) => {
+  const formik = useFormik({
+    initialValues: {
+      firstName: '',
+      lastName: '',
+      email: '',
+    },
+    onSubmit: async (values) => {
+      const orderId = await addNewOrder(values);
+      console.log(orderId)
+      // setId(orderId);
+      resetForm({ values: "" });
+    },
+  });
+  return (
+    <div>
+      <form onSubmit={formik.handleSubmit}>
 
-  const orderId = await addNewOrder(order);
-  setId(orderId);
-  resetForm({ values: ""});
-}
 
-  <div>
-    <h1>Para finalizar tu compra!</h1>
-    <Formik
-      initialValues={{
-        firstName: '',
-        lastName: '',
-        email: '',
-      }}
-      onSubmit={async (values) => {
-        await new Promise((r) => setTimeout(r, 500));
-        // alert(JSON.stringify(values, null, 2));
-      }}
-    >
-      <Form>
-        <label htmlFor="firstName">Nombre:</label>
-        <Field id="firstName" name="firstName" placeholder="Jane" />
+        <TextField type='text' id="firstName" label="Nombre" name="firstName" variant="outlined" size='small' value={formik.values.lastName}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur} />
 
-        <label htmlFor="lastName">Apellido</label>
-        <Field id="lastName" name="lastName" placeholder="Doe" />
 
-        <label htmlFor="email">Email</label>
-        <Field
-          id="email"
-          name="email"
-          placeholder="test@test.com.ar"
-          type="email"
+        <TextField type='text' id="lastName" label="Apellido" name="lastName" variant="outlined" size='small' value={formik.values.lastName}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur} />
+
+        <TextField type='email' id="email" label="Email" name="email" placeholder='user@domain.com' variant="outlined" size='small' value={formik.values.email}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
-        <button type="submit">Comprar</button>
-      </Form>
-    </Formik>
-  </div>
-;
+
+        <Button size="small" variant="contained" color="success" type='submit'>Comprar</Button>
+      </form>
+    </div>
+
+  )
+    ;
 }
 
 

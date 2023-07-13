@@ -9,13 +9,15 @@ const Checkout = () => {
     //   };
 
     return (
-    <div>
-        <img src={mainLogo} alt="LOGO CHICKEN STATION" />
-    
         <div>
-     <CheckoutForm />
-    </div>
-    </div>
+                <h1>Para finalizar tu compra!</h1>
+
+            {/* <img src={mainLogo} alt="LOGO CHICKEN STATION" /> */}
+
+            <div>
+                <CheckoutForm />
+            </div>
+        </div>
     );
 }
 
